@@ -1,1 +1,1 @@
-import '../vuestic-admin'
+import 'vuestic-admin'

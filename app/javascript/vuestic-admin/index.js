@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import VeeValidate from 'vee-validate'
 import App from './App'
-import store from './vuex-store'
+import store from 'vuex-store'
 import router from './router'
 import { sync } from 'vuex-router-sync'
 import VuesticPlugin from '../vuestic-plugin'
