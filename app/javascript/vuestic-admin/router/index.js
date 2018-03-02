@@ -1,16 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import menuModule from 'vuex-store/modules/menu'
+import menuModule from 'vuestic-admin/store/modules/menu'
 
 Vue.use(Router)
-
-export default new Router({
-  routes: [
-    ...generateRoutesFromMenu(menuModule.state.items),
-    {path: '*', redirect: { name: getDefaultRoute(menuModule.state.items).name }}
-  ]
-})
 
 function generateRoutesFromMenu (menu = [], routes = []) {
   for (let i = 0, l = menu.length; i < l; i++) {
@@ -39,3 +32,11 @@ function getDefaultRoute (menu = []) {
 
   return defaultRoute
 }
+
+export default new Router({
+  routes: [
+    ...generateRoutesFromMenu(menuModule.state.items),
+    // { path: '*', redirect: { name: getDefaultRoute(menuModule.state.items).name }}
+    { path: '*', redirect: { name: 'Typography' } }
+]
+})

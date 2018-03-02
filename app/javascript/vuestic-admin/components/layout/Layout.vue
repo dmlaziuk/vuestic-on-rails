@@ -6,8 +6,8 @@
     <div class="content-wrap" id="content-wrap">
       <main id="content" class="content" role="main">
         <vuestic-breadcrumbs :breadcrumbs="breadcrumbs"/>
-        <vuestic-pre-loader v-show="isLoading" ref="preLoader" class="pre-loader"></vuestic-pre-loader>
-        <router-view v-show="!isLoading"></router-view>
+        <vuestic-pre-loader v-show="isLoading" ref="preLoader" class="pre-loader"/>
+        <router-view v-show="!isLoading"/>
       </main>
     </div>
 
@@ -22,7 +22,7 @@
 
   import Navbar from './navbar/Navbar.vue'
   import Sidebar from './sidebar/Sidebar.vue'
-  import Resize from 'directives/ResizeHandler'
+  import Resize from 'vuestic-admin/directives/ResizeHandler'
 
   export default {
     name: 'layout',

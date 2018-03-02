@@ -1,4 +1,13 @@
-import lazyLoading from './lazyLoading'
+// import lazyLoading from './lazyLoading'
+import Typography from 'vuestic-admin/components/ui/typography/Typography.vue'
+import Buttons from 'vuestic-admin/components/ui/buttons/Buttons.vue'
+import Notifications from 'vuestic-admin/components/ui/notifications/Notifications.vue'
+import Icons from 'vuestic-admin/components/ui/icons/Icons.vue'
+import SetsList from 'vuestic-admin/components/ui/icons/SetsList.vue'
+import IconsSet from 'vuestic-admin/components/ui/icons/Set.vue'
+import Spinners from 'vuestic-admin/components/ui/spinners/Spinners.vue'
+import Grid from 'vuestic-admin/components/ui/grid/Grid.vue'
+import Modals from 'vuestic-admin/components/ui/modals/Modals.vue'
 
 export default {
   name: 'ui',
@@ -11,7 +20,8 @@ export default {
     {
       name: 'Typography',
       path: '/ui/typography',
-      component: lazyLoading('ui/typography/Typography'),
+      component: Typography,
+      // component: lazyLoading('ui/typography/Typography'),
       meta: {
         title: 'menu.typography'
       }
@@ -19,7 +29,8 @@ export default {
     {
       name: 'Buttons',
       path: '/ui/buttons',
-      component: lazyLoading('ui/buttons/Buttons'),
+      component: Buttons,
+      // component: lazyLoading('ui/buttons/Buttons'),
       meta: {
         title: 'menu.buttons'
       }
@@ -27,28 +38,32 @@ export default {
     {
       name: 'Notifications',
       path: '/ui/notifications',
-      component: lazyLoading('ui/notifications/Notifications'),
+      component: Notifications,
+      // component: lazyLoading('ui/notifications/Notifications'),
       meta: {
         title: 'menu.notifications'
       }
     },
     {
       path: '/ui/icons',
-      component: lazyLoading('ui/icons/Icons'),
+      component: Icons,
+      // component: lazyLoading('ui/icons/Icons'),
       meta: {
         title: 'menu.icons'
       },
       children: [
         {
           path: '', // Default route
-          component: lazyLoading('ui/icons/SetsList'),
+          component: SetsList,
+          // component: lazyLoading('ui/icons/SetsList'),
           meta: {
             title: 'menu.icons'
           }
         },
         {
           path: ':name',
-          component: lazyLoading('ui/icons/Set'),
+          component: IconsSet,
+          // component: lazyLoading('ui/icons/Set'),
           props: true,
           meta: {
             title: 'Set'
@@ -59,7 +74,8 @@ export default {
     {
       name: 'Spinners',
       path: '/ui/spinners',
-      component: lazyLoading('ui/spinners/Spinners'),
+      component: Spinners,
+      // component: lazyLoading('ui/spinners/Spinners'),
       meta: {
         title: 'menu.spinners'
       }
@@ -67,7 +83,8 @@ export default {
     {
       name: 'Grid',
       path: '/ui/grid',
-      component: lazyLoading('ui/grid/Grid'),
+      component: Grid,
+      // component: lazyLoading('ui/grid/Grid'),
       meta: {
         title: 'menu.grid'
       }
@@ -75,7 +92,8 @@ export default {
     {
       name: 'Modals',
       path: '/ui/modals',
-      component: lazyLoading('ui/modals/Modals'),
+      component: Modals,
+      // component: lazyLoading('ui/modals/Modals'),
       meta: {
         title: 'menu.modals'
       }

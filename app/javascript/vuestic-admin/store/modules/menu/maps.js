@@ -1,4 +1,8 @@
-import lazyLoading from './lazyLoading'
+// import lazyLoading from './lazyLoading'
+import GoogleMapsPage from 'vuestic-admin/components/maps/google-maps/GoogleMapsPage.vue'
+import LeafletMapsPage from 'vuestic-admin/components/maps/leaflet-maps/LeafletMapsPage.vue'
+import BubbleMapsPage from 'vuestic-admin/components/maps/bubble-maps/BubbleMapsPage.vue'
+import LineMapsPage from 'vuestic-admin/components/maps/line-maps/LineMapsPage.vue'
 
 export default {
   name: 'Maps',
@@ -12,7 +16,8 @@ export default {
     {
       name: 'GoogleMaps',
       path: '/maps/google-maps',
-      component: lazyLoading('maps/google-maps/GoogleMapsPage'),
+      component: GoogleMapsPage,
+      // component: lazyLoading('maps/google-maps/GoogleMapsPage'),
       meta: {
         title: 'Google Maps'
       }
@@ -20,7 +25,8 @@ export default {
     {
       name: 'LeafletMaps',
       path: '/maps/leaflet-maps',
-      component: lazyLoading('maps/leaflet-maps/LeafletMapsPage'),
+      component: LeafletMapsPage,
+      // component: lazyLoading('maps/leaflet-maps/LeafletMapsPage'),
       meta: {
         title: 'Leaflet Maps'
       }
@@ -28,7 +34,8 @@ export default {
     {
       name: 'BubbleMaps',
       path: '/maps/bubble-maps',
-      component: lazyLoading('maps/bubble-maps/BubbleMapsPage'),
+      component: BubbleMapsPage,
+      // component: lazyLoading('maps/bubble-maps/BubbleMapsPage'),
       meta: {
         title: 'Bubble Maps'
       }
@@ -36,7 +43,8 @@ export default {
     {
       name: 'LineMaps',
       path: '/maps/line-maps',
-      component: lazyLoading('maps/line-maps/LineMapsPage'),
+      component: LineMapsPage,
+      // component: lazyLoading('maps/line-maps/LineMapsPage'),
       meta: {
         title: 'Line Maps'
       }

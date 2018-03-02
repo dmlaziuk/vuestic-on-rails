@@ -240,7 +240,7 @@
 </template>
 
 <script>
-  import CountriesList from 'data/CountriesList'
+  import CountriesList from 'vuestic-admin/data/CountriesList'
 
   export default {
     name: 'form-wizard',

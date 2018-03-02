@@ -1,4 +1,5 @@
-import lazyLoading from './lazyLoading.js'
+// import lazyLoading from './lazyLoading.js'
+import Table from 'vuestic-admin/components/tables/Table.vue'
 
 export default {
   name: 'tables',
@@ -7,5 +8,6 @@ export default {
     iconClass: 'vuestic-icon vuestic-icon-tables'
   },
   path: '/tables',
-  component: lazyLoading('tables/Table')
+  component: Table
+  // component: lazyLoading('tables/Table')
 }

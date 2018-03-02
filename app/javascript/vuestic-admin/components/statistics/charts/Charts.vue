@@ -45,17 +45,17 @@
 </template>
 
 <script>
-  import LineChartData from 'data/charts/LineChartData'
-  import BubbleChartData from 'data/charts/BubbleChartData'
-  import PieChartData from 'data/charts/PieChartData'
-  import DonutChartData from 'data/charts/DonutChartData'
-  import VerticalBarChartData from 'data/charts/VerticalBarChartData'
-  import HorizontalBarChartData from 'data/charts/HorizontalBarChartData'
+  import LineChartData from 'vuestic-admin/data/charts/LineChartData'
+  import BubbleChartData from 'vuestic-admin/data/charts/BubbleChartData'
+  import PieChartData from 'vuestic-admin/data/charts/PieChartData'
+  import DonutChartData from 'vuestic-admin/data/charts/DonutChartData'
+  import VerticalBarChartData from 'vuestic-admin/data/charts/VerticalBarChartData'
+  import HorizontalBarChartData from 'vuestic-admin/data/charts/HorizontalBarChartData'
 
   export default {
     name: 'charts',
 
-    data: function () {
+    data: () => {
       return {
         bubbleChartData: BubbleChartData,
         lineChartData: LineChartData,

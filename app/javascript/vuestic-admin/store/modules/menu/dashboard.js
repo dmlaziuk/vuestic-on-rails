@@ -1,9 +1,11 @@
-import lazyLoading from './lazyLoading'
+// import lazyLoading from './lazyLoading'
+import Dashboard from 'vuestic-admin/components/dashboard/Dashboard.vue'
 
 export default {
   name: 'Dashboard',
   path: '/dashboard',
-  component: lazyLoading('dashboard/Dashboard'),
+  component: Dashboard,
+  // component: lazyLoading('dashboard/Dashboard'),
   meta: {
     default: true,
     title: 'menu.dashboard',

@@ -12,7 +12,7 @@
 
 <script>
   import LineMap from './LineMap.vue'
-  import LineMapData from 'data/maps/LineMapData'
+  import LineMapData from 'vuestic-admin/data/maps/LineMapData'
 
   export default {
     name: 'line-maps-page',

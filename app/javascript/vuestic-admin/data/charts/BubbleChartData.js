@@ -1,5 +1,5 @@
 import store from 'vuex-store'
-import utils from 'services/utils'
+import utils from 'vuestic-admin/services/utils'
 
 let palette = store.getters.palette
 

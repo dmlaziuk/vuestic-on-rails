@@ -107,7 +107,7 @@
   export default {
     name: 'progress-bars',
 
-    mounted () {
+    mounted: () => {
       let delay = 0
       for (let ref in this.$refs) {
         this.$refs[ref].$data.valueAnimationInterval = this.valueAnimationInterval
@@ -122,7 +122,7 @@
       }
     },
 
-    data () {
+    data: () => {
       return {
         valueAnimationInterval: 3000
       }

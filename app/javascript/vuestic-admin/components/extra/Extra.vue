@@ -46,9 +46,9 @@
 </template>
 
 <script>
-  import OverviewTab from 'components/dashboard/features-tab/FeaturesTab.vue'
-  import SetupProfileTab from 'components/dashboard/setup-profile-tab/SetupProfileTab.vue'
-  import LeafletMap from 'components/maps/leaflet-maps/LeafletMap.vue'
+  import OverviewTab from 'vuestic-admin/components/dashboard/features-tab/FeaturesTab.vue'
+  import SetupProfileTab from 'vuestic-admin/components/dashboard/setup-profile-tab/SetupProfileTab.vue'
+  import LeafletMap from 'vuestic-admin/components/maps/leaflet-maps/LeafletMap.vue'
 
   export default {
     name: 'extra',
